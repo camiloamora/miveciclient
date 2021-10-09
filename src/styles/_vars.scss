@@ -8,3 +8,12 @@
   --md: 16px;
   --lg: 18px;
 }
+
+
+.wrapper {
+  padding: 0 var(--wrapperSpace);
+  max-width: calc(1115px + 1.5em);
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+}

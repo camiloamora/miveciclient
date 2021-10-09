@@ -1,42 +1,40 @@
-import React from 'react'
-import '../styles/Header.scss'
+import React, { useState } from 'react'
+import '@styles/Header.scss'
+import Menu from '@components/Menu'
+import logo from '@logos/logo_miveci.svg'
+import menu from '@icons/icon_menu.svg'
+import arrow from '@icons/arrow.svg'
 
 const Header = () => {
+  const [toggle, setToogle] = useState(false)
+
+  const handleToogle = () => {
+    setToogle(!toggle)
+  }
+
   return (
     <nav>
-      <img src="./icons/icon_menu.svg" alt="menu" className="menu" />
+      <img src={menu} alt="menu" className="menu"
+      onClick={handleToogle} />
       <div className="navbar-left">
-        <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
+        <img src={logo} alt="logo" className="nav-logo" />
         <ul>
           <li>
-            <a href="/">All</a>
-          </li>
-          <li>
-            <a href="/">Clothes</a>
-          </li>
-          <li>
-            <a href="/">Electronics</a>
-          </li>
-          <li>
-            <a href="/">Furnitures</a>
-          </li>
-          <li>
-            <a href="/">Toys</a>
-          </li>
-          <li>
-            <a href="/">Others</a>
+            <a href="/">Inicio</a>
           </li>
         </ul>
       </div>
       <div className="navbar-right">
         <ul>
-          <li className="navbar-email">platzi@example.com</li>
-          <li className="navbar-shopping-cart">
-            <img src="./icons/icon_shopping_cart.svg" alt="shopping cart" />
-            <div>2</div>
+          <li className="navbar-email">
+            mora_camilo@hotmail.com
           </li>
+          <img src={arrow} alt="menu"
+          className="navbar-arrow"
+          onClick={handleToogle} />
         </ul>
       </div>
+      {toggle && <Menu />}
     </nav>
   )
 }
