@@ -1,7 +1,7 @@
 @import 'vars';
 
 .PostItem {
-  width: 400px;
+  width: 320px;
   border: 1px solid var(--hospital-green);
   border-radius: 5px;
 
@@ -13,10 +13,11 @@
     border-radius: .5em;
     overflow: hidden;
     background: var(--white);
+    &-content {
+      padding: 1.8em;
+    }
   }
-  &-content {
-    padding: 1.8em;
-  }
+
   .copy {
     color: var(--grayBlue);
   }
