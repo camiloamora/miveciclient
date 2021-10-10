@@ -11,3 +11,9 @@ Cliente Socila media aplicación React
 
 ## Diseño UI
 Todos los diseños son propios, la fuente es de google Fonts Quicksand
+
+## Demo
+![demo/screen1.png](demo/screen1.png)
+![demo/screen2.png](demo/screen2.png)
+![demo/screen3.png](demo/screen3.png)
+![demo/screen4.png](demo/screen4.png)
