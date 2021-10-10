@@ -11,7 +11,7 @@ const CreateAccount = () => {
           <label for="name" class="label">Name</label>
           <input type="text" id="name" placeholder="Teff" class="input input-name" />
           <label for="email" class="label">Email</label>
-          <input type="text" id="email" placeholder="platzi@example.com" class="input input-email" />
+          <input type="text" id="email" placeholder="mora_camilo@example.com" class="input input-email" />
           <label for="password" class="label">Password</label>
           <input type="password" id="password" placeholder="*********" class="input input-password" />
         </div>
