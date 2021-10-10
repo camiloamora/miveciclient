@@ -30,7 +30,7 @@
       grid-area: links;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      justify-items: start;
+      justify-items: center;
     }
     &__logo {
       grid-area: logo;

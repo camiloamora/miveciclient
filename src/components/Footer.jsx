@@ -1,6 +1,6 @@
 import React from 'react'
 import '@styles/Footer.scss'
-import logo from '@logos/logo_miveci.svg'
+import logo from '@logos/logo_miveci_black.svg'
 
 const Footer = () => {
   return (

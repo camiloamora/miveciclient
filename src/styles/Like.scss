@@ -1,0 +1,43 @@
+.Like{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.Like-counter {
+  margin: 3px;
+}
+
+.Like-fav {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  background-image:url( 'https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png');
+  background-position: left;
+  background-repeat:no-repeat;
+  background-size:2900%;
+}
+
+.Like-fav:hover {
+  background-position:right;
+}
+
+.Like--pressed {
+  background-position:right;
+}
+
+.is_animating {
+  animation: heart-burst .8s steps(28) 1;
+}
+
+@keyframes heart-burst {
+  from {background-position:left;}
+  to { background-position:right;}
+}
+
