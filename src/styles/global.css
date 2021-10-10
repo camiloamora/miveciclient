@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+.primary-button--small {
+  width: 100px;
+  height: 40px;
+}
